@@ -1,0 +1,356 @@
+@font-face {
+    src: url(fonts/Raleway.ttf);
+    font-family: paragraffont;
+}
+
+@font-face {
+    src: url(fonts/Kavivnar.ttf);
+    font-family: navnfont;
+}
+
+/* navbar */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-family: paragraffont;
+}
+
+.container {
+    background-color: #F5F5F5;
+    display: flex;
+    height: 52px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: paragraffont;
+}
+
+.container li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+/* navbar slut*/
+.projekt {
+    color: #B78275;
+}
+
+.kontakt {
+    color:#B78275;
+}
+
+.om {
+    color:#B78275;
+}
+
+.logo {
+    height: 30px;
+    width: 35px;
+    display: flex;
+    margin: 20px;
+}
+
+h2 {
+    font-size: 16px;
+    font-family: paragraffont;
+}
+
+.box {
+    height: 150px;
+    width: auto;
+    background-color: #F5F5F5;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: navnfont;
+    position: relative;
+    top: 40px;
+    margin-left: 50px;
+}
+
+.forsidetekst {
+    position: relative;
+    font-size: 16px;
+    top: 40px;
+    margin-left: 50px;
+}
+
+.bold {
+    font-weight: bold;
+    color: #B78275;
+}
+
+.portræt {
+    position: absolute;
+    width: 110px;
+    height: 140px;
+    top: 65px;
+    right: 40px;
+}
+
+/* style af katogorier i navbar */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color:  #B78275;
+}
+/* style af katogorier i navbar slut */
+
+.box1 {
+    width: 225px;
+    height: 155px;
+    border-color: #B78275;
+    border-style: solid;
+    border-width: 4px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.box2 {
+    width: 225px;
+    height: 155px;
+    border-color: #B78275;
+    border-style: solid;
+    border-width: 4px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.box3 {
+    width: 225px;
+    height: 155px;
+    border-color: #B78275;
+    border-style: solid;
+    border-width: 4px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.knap {
+    width: 104px;
+    height: 26px;
+    background-color: #B78275;
+    color:#F5F5F5;
+    position: relative;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 30px;
+}
+
+.boxtekst {
+    margin-top: 20px;
+}
+
+.knaptekst {
+    color:#F5F5F5;
+    font-family: paragraffont;
+}
+
+.knaptekst:hover {
+    color: black;
+}
+
+footer {
+    background-color: #F5F5F5;
+    height: 55px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* tablet */ 
+@media only screen and (min-width: 750px) {
+    .container {
+        height: 52px;
+    }
+    
+    .logo {
+        scale: 130%;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+    
+    .box {
+        height: 200px;
+    }
+    
+    h1 {
+        font-size: 25px;
+        margin-left: 70px;
+    }
+    
+    .forsidetekst {
+        font-size: 20px;
+        margin-left: 70px;
+    }
+    
+    .portræt {
+        position: absolute;
+        right: 60px;
+        scale: 130%;
+        top: 95px;
+    }
+    
+    .box1 {
+        width: 270px;
+        height: 200px;
+        border-width: 6px;
+        margin-top: 30px;
+    }
+    
+    .box2 {
+        width: 270px;
+        height: 200px;
+        border-width: 6px;
+        margin-top: 30px;
+    }
+    
+    .box3 {
+        width: 270px;
+        height: 200px;
+        border-width: 6px;
+        margin-top: 30px;
+    }
+    
+    .knap {
+        width: 130px;
+        height: 30px;
+        margin-top: 30px;
+
+    }
+    
+    .boxtekst {
+        margin-top: 30px;
+        padding: 5px;
+    }
+    
+    footer {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container li {
+        padding: 10px;
+        margin-right: 40px;
+    }
+
+    .box {
+        height: 250px;
+    }
+
+    h1 {
+    font-size: 40px;
+    top: 60px;
+    margin-left: 120px;
+}
+
+.forsidetekst {
+    font-size: 25px;
+    top: 60px;
+    margin-left: 120px;
+}
+
+.portræt {
+    width: 140px;
+    height: 180px;
+    top: 100px;
+    right: 170px;
+}
+
+.box1 {
+    width: 270px;
+    height: 200px;
+    border-width: 6px;
+    margin-top: 70px;
+    margin-left: 120px;
+}
+
+.box2 {
+    width: 270px;
+    height: 200px;
+    border-width: 6px;
+    margin-top: 70px;
+}
+
+.box3 {
+    width: 270px;
+    height: 200px;
+    border-width: 6px;
+    margin-top:70px;
+    margin-right: 155px;
+}
+
+.knap {
+    width: 104px;
+    height: 26px;
+    position: relative;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.boxtekst {
+    margin-top: 20px;
+}
+
+footer {
+    height: 55px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 150px;
+}
+}
+
+/* ommig mobil */
+.navn {
+    position: absolute;
+    left: 70px;
+    font-family: navnfont;
+}
+
+.mig {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.foto {
+    width: 300px;
+    height: 300px;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.infobox {
+    width: 350px;
+    height: 300px;
+    border-color: #B78275;
+    border-style: solid;
+    border-width: 4px;
+    text-align:left;
+    padding: 10px;
+    margin-left: 75px;
+    margin-top: 10px;
+}

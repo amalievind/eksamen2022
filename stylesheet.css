@@ -1,5 +1,5 @@
 @font-face {
-    src: url(fonts/Raleway.ttf);
+    src: url(fonts/Montserrat.ttf);
     font-family: paragraffont;
 }
 
@@ -20,7 +20,7 @@ p {
 }
 
 .container {
-    background-color: #F5F5F5;
+    background-color:#EAEAEA;
     display: flex;
     height: 52px;
     justify-content: space-between;
@@ -35,15 +35,15 @@ p {
 }
 /* navbar slut*/
 .projekt {
-    color: #B78275;
+    color:#C1796C;
 }
 
 .kontakt {
-    color:#B78275;
+    color:#C1796C;
 }
 
 .om {
-    color:#B78275;
+    color:#C1796C;
 }
 
 .logo {
@@ -56,12 +56,15 @@ p {
 h2 {
     font-size: 16px;
     font-family: paragraffont;
+    font-style: bold;
+    padding-bottom: 5px;
+    font-weight: bold;
 }
 
 .box {
-    height: 150px;
+    height: 400px;
     width: auto;
-    background-color: #F5F5F5;
+    background-color:#EAEAEA;
 }
 
 h1 {
@@ -81,8 +84,8 @@ h1 {
 }
 
 .bold {
-    font-weight: bold;
-    color: #B78275;
+    font-weight: bolder;
+    color:#C1796C;
 }
 
 .portræt {
@@ -91,6 +94,70 @@ h1 {
     height: 140px;
     top: 65px;
     right: 40px;
+    opacity: 0.8;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    height: auto;
+    border:#C1796C;
+    border-width: 3px;
+    border-style: solid;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 5px 5px 5px #D3CECB;
+}
+
+.knap {
+    width: 104px;
+    height: 26px;
+    background-color:#C1796C;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 30px;
+    padding: 3px;
+}
+
+.knaptekst {
+    color:#F5F5F5;
+    font-family: paragraffont;
+    padding: 10px;
+}
+
+.knaptekst:hover {
+    color: black;
+}
+
+footer {
+    background-color:#F0EBE8;
+    height: 55px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.fa-solid {
+    font-size:x-large;
+    padding: 10px;
+}
+
+.fa-brands {
+    font-size: x-large;
+    padding: 10px;
+
+}
+.fa-solid:hover {
+    opacity: 0.6;
+}
+
+.fa-brands:hover {
+    opacity: 0.6;
 }
 
 /* style af katogorier i navbar */
@@ -100,78 +167,9 @@ a {
 }
 
 a:hover {
-    color:  #B78275;
+    color:#C1796C;
 }
 /* style af katogorier i navbar slut */
-
-.box1 {
-    width: 225px;
-    height: 155px;
-    border-color: #B78275;
-    border-style: solid;
-    border-width: 4px;
-    text-align: center;
-    position: relative;
-    margin: auto;
-    margin-top: 30px;
-}
-
-.box2 {
-    width: 225px;
-    height: 155px;
-    border-color: #B78275;
-    border-style: solid;
-    border-width: 4px;
-    text-align: center;
-    position: relative;
-    margin: auto;
-    margin-top: 30px;
-}
-
-.box3 {
-    width: 225px;
-    height: 155px;
-    border-color: #B78275;
-    border-style: solid;
-    border-width: 4px;
-    text-align: center;
-    position: relative;
-    margin: auto;
-    margin-top: 30px;
-}
-
-.knap {
-    width: 104px;
-    height: 26px;
-    background-color: #B78275;
-    color:#F5F5F5;
-    position: relative;
-    margin: auto;
-    margin-top: 25px;
-    border-radius: 30px;
-}
-
-.boxtekst {
-    margin-top: 20px;
-}
-
-.knaptekst {
-    color:#F5F5F5;
-    font-family: paragraffont;
-}
-
-.knaptekst:hover {
-    color: black;
-}
-
-footer {
-    background-color: #F5F5F5;
-    height: 55px;
-    width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    text-align: center;
-}
 
 /* tablet */ 
 @media only screen and (min-width: 750px) {
@@ -215,30 +213,9 @@ footer {
         margin-top: 30px;
     }
     
-    .box2 {
-        width: 270px;
-        height: 200px;
-        border-width: 6px;
-        margin-top: 30px;
-    }
-    
-    .box3 {
-        width: 270px;
-        height: 200px;
-        border-width: 6px;
-        margin-top: 30px;
-    }
-    
     .knap {
         width: 130px;
         height: 30px;
-        margin-top: 30px;
-
-    }
-    
-    .boxtekst {
-        margin-top: 30px;
-        padding: 5px;
     }
     
     footer {
@@ -282,25 +259,7 @@ footer {
 
 .box1 {
     width: 270px;
-    height: 200px;
     border-width: 6px;
-    margin-top: 70px;
-    margin-left: 120px;
-}
-
-.box2 {
-    width: 270px;
-    height: 200px;
-    border-width: 6px;
-    margin-top: 70px;
-}
-
-.box3 {
-    width: 270px;
-    height: 200px;
-    border-width: 6px;
-    margin-top:70px;
-    margin-right: 155px;
 }
 
 .knap {
@@ -311,10 +270,6 @@ footer {
     margin-top: 25px;
 }
 
-.boxtekst {
-    margin-top: 20px;
-}
-
 footer {
     height: 55px;
     padding: 10px;
@@ -322,6 +277,42 @@ footer {
     margin-top: 150px;
 }
 }
+
+/* projekter mobil */
+.projektstreg {
+    width: 300px;
+}
+
+.projektflex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: auto;
+}
+
+.projektbillede {
+    width: 300px;
+    margin-top: 30px;
+
+}
+
+.projektp {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 750px) {
+.projektflex {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+}
+
+
+
+
 
 /* ommig mobil */
 .navn {
@@ -337,20 +328,185 @@ footer {
 }
 
 .foto {
-    width: 300px;
-    height: 300px;
-    margin-top: 40px;
-    margin-left: 100px;
+    width: auto;
+    height: 350px;
+    margin: auto;
+    margin-top: 30px;
 }
 
 .infobox {
-    width: 350px;
+    width: 365px;
+    height: auto;
+    text-align:left;
+    padding: 30px;
+    border: #C1796C;
+    border-width: 4px;
+    border-style: solid;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 5px 5px 5px #D3CECB;
+}
+
+hr {
+    margin: auto;
+    height: 3px;
+    background-color:#C1796C;
+    border-width: 0px;
+    width: 365px;
+    margin-top: 10px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+/* tablet */
+@media only screen and (min-width: 750px) {
+.navn {
+        font-size: 18px;
+}    
+ 
+.mig {
+    font-size: 25px;
+}
+    
+hr {
+    width: 500px;
+}
+
+.foto {
+    width: 500px;
+    height: 500px;
+}
+
+.infobox {
+    width: 500px;
+    font-size: 18px;
+}
+}
+/* desktop */
+@media only screen and (min-width: 1024px) {
+.mig {
+    text-align: left;
+    position: relative;
+    margin-left: 140px;
+}
+
+hr {
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.navn {
+    font-size: 18px;
+}    
+
+.foto {
+margin-left: 140px;
+}
+
+.infobox {
+width: 550px;
+margin: auto;
+margin-right: 140px;
+}
+
+.flex {
+flex-direction: row;
+margin: auto;
+margin-bottom: -130px;
+}
+}
+
+/* kontakt mig mobil */
+.streg {
+width: 340px;
+}
+
+.kontaktbox {
+    display: flex;
+    width: 340px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.nr {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding-left: 150px;
+    margin-top: 30px;
+}
+
+.fa-phone {
+    margin-top: -12px;
+}
+
+.mail {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    padding-left: 115px;
+}
+
+.fa-envelope {
+    margin-top: -10px;
+}
+
+.foto1 {
     height: 300px;
-    border-color: #B78275;
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    border-bottom:#C1796C;
+    border-right: #C1796C;
     border-style: solid;
     border-width: 4px;
-    text-align:left;
-    padding: 10px;
-    margin-left: 75px;
-    margin-top: 10px;
+}
+
+/* tablet */
+@media only screen and (min-width: 750px) {
+ p {
+    font-size: 20px;
+}
+
+.streg {
+    width: 400px;
+}
+        
+.kontaktbox {
+    width: 400px;
+}
+        
+        
+        .fa-phone {
+            margin-top: -12px;
+        }
+        
+        .mail {
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            margin-left: 350px;
+        }
+        
+        .fa-envelope {
+            margin-top: -10px;
+        }
+        
+        .foto1 {
+            height: 300px;
+            width: 300px;
+            margin-top: 30px;
+            border-bottom:#C1796C;
+            border-right: #C1796C;
+            border-style: solid;
+            border-width: 4px;
+        }
+
+        .flexkontakt {
+            flex-direction: row;
+        }
 }

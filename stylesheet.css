@@ -8,15 +8,32 @@
     font-family: navnfont;
 }
 
+/* p mobil */
+p {
+    font-family: paragraffont;
+    font-size: 14px;
+}
+
+/* p tablet */
+@media only screen and (min-width: 750px) {
+p {
+    font-size: 16px;
+}
+}
+
+/* p desktop */
+@media only screen and (min-width: 1024px) {
+p {
+    font-size: 18px;
+}
+}
+/* p slut */
+
 /* navbar */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
-
-p {
-    font-family: paragraffont;
 }
 
 .container {
@@ -33,7 +50,26 @@ p {
     display: inline-block;
     padding: 10px;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color:#C1796C;
+}
+
+/* navn i navbar */
+.navn {
+    position: absolute;
+    left: 70px;
+    font-family: navnfont;
+}
+/* navn i navbar slut */
 /* navbar slut*/
+
+/* farvar på punkter i menu */
 .projekt {
     color:#C1796C;
 }
@@ -45,6 +81,7 @@ p {
 .om {
     color:#C1796C;
 }
+/* farver på punkter i menu slut */
 
 .logo {
     height: 30px;
@@ -53,34 +90,35 @@ p {
     margin: 20px;
 }
 
-h2 {
+h3 {
     font-size: 16px;
     font-family: paragraffont;
-    font-style: bold;
-    padding-bottom: 5px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
+/* forside mobil */
+/* indhold i box under navbar */
 .box {
     height: 400px;
     width: auto;
-    background-color:#EAEAEA;
+    background-color:#E2DDDA;
 }
 
 h1 {
-    font-size: 20px;
-    font-weight: lighter;
+    font-size: 28px;
     font-family: navnfont;
+    font-weight: 100;
     position: relative;
-    top: 40px;
-    margin-left: 50px;
+    top: 45px;
+    text-align: center;
 }
 
 .forsidetekst {
     position: relative;
-    font-size: 16px;
-    top: 40px;
-    margin-left: 50px;
+    font-size: 20px;
+    top: 45px;
+    text-align: center;
 }
 
 .bold {
@@ -90,18 +128,19 @@ h1 {
 
 .portræt {
     position: absolute;
-    width: 110px;
-    height: 140px;
-    top: 65px;
-    right: 40px;
-    opacity: 0.8;
+    width: 170px;
+    height: 260px;
+    margin-top: 50px;
+    right: 175px;
 }
+/* indhold i box under navbar slut */
 
+/* kasser og indhold på forside */
 .box1 {
     display: flex;
     flex-direction: column;
-    width: 225px;
-    height: auto;
+    width: 240px;
+    height: 170px;
     border:#C1796C;
     border-width: 3px;
     border-style: solid;
@@ -109,30 +148,34 @@ h1 {
     position: relative;
     margin: auto;
     margin-top: 30px;
-    padding: 10px 20px 10px 20px;
+    padding: 10px;
     box-shadow: 5px 5px 5px #D3CECB;
 }
 
 .knap {
-    width: 104px;
-    height: 26px;
+    width: 108px;
+    height: 25px;
     background-color:#C1796C;
     margin: auto;
     margin-top: 25px;
-    border-radius: 30px;
-    padding: 3px;
+    border-radius: 70px;
+    padding: 2px;
 }
 
 .knaptekst {
     color:#F5F5F5;
     font-family: paragraffont;
+    font-size: 12px;
     padding: 10px;
 }
 
 .knaptekst:hover {
     color: black;
 }
+/* kasser og indhold på forside slut */
+/* forside mobil slut */
 
+/* footer */
 footer {
     background-color:#F0EBE8;
     height: 55px;
@@ -159,192 +202,293 @@ footer {
 .fa-brands:hover {
     opacity: 0.6;
 }
+/* footer slut */
 
-/* style af katogorier i navbar */
-a {
-    text-decoration: none;
-    color: black;
-}
 
-a:hover {
-    color:#C1796C;
-}
-/* style af katogorier i navbar slut */
-
-/* tablet */ 
+/* forside tablet */ 
 @media only screen and (min-width: 750px) {
-    .container {
-        height: 52px;
-    }
+.container {
+    height: 52px;
+}
     
-    .logo {
-        scale: 130%;
-    }
+.logo {
+    width: 40px;
+}
     
-    h2 {
-        font-size: 20px;
-    }
-    
-    .box {
-        height: 200px;
-    }
-    
-    h1 {
-        font-size: 25px;
-        margin-left: 70px;
-    }
-    
-    .forsidetekst {
-        font-size: 20px;
-        margin-left: 70px;
-    }
-    
-    .portræt {
-        position: absolute;
-        right: 60px;
-        scale: 130%;
-        top: 95px;
-    }
-    
-    .box1 {
-        width: 270px;
-        height: 200px;
-        border-width: 6px;
-        margin-top: 30px;
-    }
-    
-    .knap {
-        width: 130px;
-        height: 30px;
-    }
-    
-    footer {
-        text-align: center;
-    }
+h2 {
+    font-size: 20px;
 }
 
-@media only screen and (min-width: 1024px) {
-    main {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .container li {
-        padding: 10px;
-        margin-right: 40px;
-    }
-
-    .box {
-        height: 250px;
-    }
-
-    h1 {
-    font-size: 40px;
-    top: 60px;
-    margin-left: 120px;
+.box {
+    height: 500px;
 }
-
+    
+h1 {
+    font-size: 35px;
+    top: 180px;
+}
+    
 .forsidetekst {
     font-size: 25px;
-    top: 60px;
-    margin-left: 120px;
+    top: 180px;
 }
-
+    
 .portræt {
-    width: 140px;
-    height: 180px;
-    top: 100px;
-    right: 170px;
+    width: 225px;
+    height: auto;
+    top: 164px;
+    margin-right: -150px;
 }
 
 .box1 {
     width: 270px;
+    height: 200px;
     border-width: 6px;
+    margin-top: 30px;
+}
+    
+.knap {
+    width: 130px;
+    height: 30px;
+    padding: 4px;
+}
+}
+
+/* forside desktop */
+@media only screen and (min-width: 1024px) {
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.container li {
+    padding: 10px;
+    margin-right: 40px;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.forsidetekst {
+    font-size: 30px;
+}
+
+.portræt {
+    width: 270px;
+    height: auto;
+    top: 95px;
+}
+    
+.box1 {
+    width: 270px;
+    border-width: 6px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .knap {
-    width: 104px;
-    height: 26px;
-    position: relative;
-    margin: auto;
-    margin-top: 25px;
+    width: 140px;
+    height: 35px;
+    padding: 6px;
 }
 
-footer {
-    height: 55px;
-    padding: 10px;
-    text-align: center;
-    margin-top: 150px;
+.knaptekst {
+    font-size: 16px;
 }
+
 }
 
 /* projekter mobil */
+h2 {
+    text-align: center;
+    font-family: paragraffont;
+    font-size: large;
+    margin-top: 50px;
+
+}
+
 .projektstreg {
     width: 300px;
 }
 
-.projektflex {
+.pro {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 300px;
+}
+
+.projektflex {
     margin: auto;
 }
 
 .projektbillede {
     width: 300px;
+    margin: auto;
     margin-top: 30px;
-
+    border: #C1796C;
+    border-style: solid;
 }
 
-.projektp {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: center;
+.knaptekstp {
+    color: #F5F5F5;
+    padding: 27px;
+    font-family: paragraffont;
+    font-size: 12px;
 }
 
+.knaptekstp:hover {
+    color: black;
+}
+
+/* projekter tablet */
 @media only screen and (min-width: 750px) {
-.projektflex {
+.projektstreg {
+    width: 500px;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+.projektbillede {
+    width: 300px;
+    height: 400px;
+    margin-top: 40px;
+}
+
+.pro {
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}   
+
+.knaptekstp {
+    padding: 32px;
+    font-size: 14px;
 }
 }
 
+/* projekter desktop */
+@media only screen and (min-width: 1024px) {
+.projektstreg {
+    width: 370px;
+    margin: auto;
+    margin-top: 10px;
+}
 
+.projektbillede {
+    width: 370px;
+    height: 500px;
+    margin-top: 60px;
+}
 
+.knaptekstp {
+    padding: 30px;
+    font-size: 16px;
+}
+}
+/* projekter desktop slut */
 
+/* info om projekter mobil */
+.infostreg {
+    margin: auto;
+    width: 400px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.infop {
+    font-size: 14px;
+}
+
+.info {
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-size: medium;
+    font-family: paragraffont;
+}
+
+.infop {
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+.infobillede {
+    width: 400px;
+}
+
+/* info om projekter tablet */
+@media only screen and (min-width: 750px) {
+.infostreg {
+    width: 500px;
+}
+
+.infooverskrift {
+    font-size: 25px;
+}
+
+h3 {
+    font-size:large;
+}
+
+.info {
+    width: 500px;
+}
+
+.infop {
+    width: 500px;
+    font-size: 16px;
+}
+
+.infobillede {
+    width: 500px;
+}
+}
+
+/* info om projekter desktop */
+@media only screen and (min-width: 1024px) {
+.infostreg {
+    width: 700px;
+}
+
+.infooverskrift {
+    font-size: 30px;
+}
+
+.info {
+    width: 700px;
+}
+    
+.infop {
+    width: 700px;
+    font-size: 18px;
+}
+    
+.infobillede {
+    width: 700px;
+}
+}
 
 /* ommig mobil */
-.navn {
-    position: absolute;
-    left: 70px;
-    font-family: navnfont;
-}
-
-.mig {
-    font-size: 20px;
-    text-align: center;
-    margin-top: 50px;
-}
-
 .foto {
-    width: auto;
-    height: 350px;
+    width: 350px;
+    height: auto;
     margin: auto;
     margin-top: 30px;
 }
 
 .infobox {
-    width: 365px;
+    width: 350px;
     height: auto;
-    text-align:left;
-    padding: 30px;
-    border: #C1796C;
-    border-width: 4px;
-    border-style: solid;
+    padding: 15px;
     margin: auto;
-    margin-top: 30px;
-    box-shadow: 5px 5px 5px #D3CECB;
 }
 
 hr {
@@ -359,34 +503,31 @@ hr {
 .flex {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
+    margin-top: 30px;
+    background-color:#E2DDDA;
 }
 
-/* tablet */
-@media only screen and (min-width: 750px) {
-.navn {
-        font-size: 18px;
-}    
- 
-.mig {
-    font-size: 25px;
-}
-    
+/* om mig tablet */
+@media only screen and (min-width: 750px) {    
 hr {
     width: 500px;
 }
 
 .foto {
     width: 500px;
-    height: 500px;
+    height: auto;
 }
 
 .infobox {
     width: 500px;
-    font-size: 18px;
+    font-size: 16px;
+    padding: 20px;
 }
 }
-/* desktop */
+/* om mig tablet slut */
+
+/* om mig desktop */
 @media only screen and (min-width: 1024px) {
 .mig {
     text-align: left;
@@ -397,46 +538,41 @@ hr {
 hr {
     margin-left: 140px;
     margin-right: 140px;
-}
-
-.navn {
-    font-size: 18px;
-}    
+}  
 
 .foto {
-margin-left: 140px;
+    width: 400px;
+    margin-left: 140px;
+    margin-bottom: 30px;
 }
 
 .infobox {
-width: 550px;
+width: 600px;
 margin: auto;
-margin-right: 140px;
+box-shadow: 5px 5px 5px #D3CECB;
 }
 
 .flex {
 flex-direction: row;
-margin: auto;
-margin-bottom: -130px;
 }
 }
+/* om mig desktop slut */
 
 /* kontakt mig mobil */
-.streg {
-width: 340px;
-}
-
 .kontaktbox {
     display: flex;
-    width: 340px;
+    flex-direction: column;
+    width: 365px;
     margin: auto;
     margin-top: 30px;
+    background-color: #D3CECB;
+    padding: 30px;
 }
 
 .nr {
     display: flex;
     flex-direction: row;
-    position: relative;
-    padding-left: 150px;
+    margin: auto;
     margin-top: 30px;
 }
 
@@ -447,16 +583,17 @@ width: 340px;
 .mail {
     display: flex;
     flex-direction: row;
+    margin: auto;
     margin-top: 10px;
-    padding-left: 115px;
 }
 
 .fa-envelope {
-    margin-top: -10px;
+    margin-top: -12px;
 }
 
 .foto1 {
-    height: 300px;
+    width: 365px;
+    height: auto;
     display: flex;
     margin: auto;
     margin-top: 30px;
@@ -465,48 +602,39 @@ width: 340px;
     border-style: solid;
     border-width: 4px;
 }
+/* kontakt mig mobil slut */
 
-/* tablet */
+/* kontakt tablet */
 @media only screen and (min-width: 750px) {
- p {
-    font-size: 20px;
-}
-
-.streg {
-    width: 400px;
-}
-        
 .kontaktbox {
-    width: 400px;
+    width: 500px;
 }
         
-        
-        .fa-phone {
-            margin-top: -12px;
-        }
-        
-        .mail {
-            display: flex;
-            flex-direction: row;
-            margin-top: 10px;
-            margin-left: 350px;
-        }
-        
-        .fa-envelope {
-            margin-top: -10px;
-        }
-        
-        .foto1 {
-            height: 300px;
-            width: 300px;
-            margin-top: 30px;
-            border-bottom:#C1796C;
-            border-right: #C1796C;
-            border-style: solid;
-            border-width: 4px;
-        }
+.foto1 {
+    width: 500px;
+    border-width: 6px;
+}
+}
+/* kontakt tablet slut */
 
-        .flexkontakt {
-            flex-direction: row;
-        }
+/* kontakt desktop */
+@media only screen and (min-width: 1024px) {
+.kontaktbox {
+    width: 600px;
+    margin: auto;
+    margin-left: 130px;
 }
+    
+.foto1 {
+    width: 400px;
+    border-width: 8px;
+    margin-right: 130px;
+    margin: auto;
+} 
+
+.flexkontakt {
+    display: flex;
+    flex-direction: row;
+}
+}  
+/* kontakt desktop slut */ 

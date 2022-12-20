@@ -1,6 +1,7 @@
-@font-face {
-    src: url(fonts/Montserrat.ttf);
-    font-family: paragraffont;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 @font-face {
@@ -8,41 +9,77 @@
     font-family: navnfont;
 }
 
-/* p mobil */
+/* tekst mobil */
 p {
-    font-family: paragraffont;
+    font-family: opensans;
     font-size: 14px;
 }
 
-/* p tablet */
+h1 {
+    font-size: 28px;
+    font-family: navnfont;
+}
+
+h2 {
+    text-align: center;
+    font-family: opensans;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 120px;
+}
+
+.underoverskrift {
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+/* tekst tablet */
 @media only screen and (min-width: 750px) {
 p {
     font-size: 16px;
 }
+
+h1 {
+    font-size: 45px;
 }
 
-/* p desktop */
+h2 {
+    font-size: 25px;
+}
+
+.underoverskrift {
+    font-size: 18px;
+}
+}
+
+/* tekst desktop */
 @media only screen and (min-width: 1024px) {
 p {
     font-size: 18px;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.underoverskrift {
+    font-size: 20px;
 }
 }
 /* p slut */
 
 /* navbar */
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
 .container {
-    background-color:#EAEAEA;
+    background-color:#E9E7E2;
     display: flex;
     height: 52px;
     justify-content: space-between;
     align-items: center;
-    font-family: paragraffont;
+    font-family: opensans;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .container li {
@@ -51,13 +88,20 @@ p {
     padding: 10px;
 }
 
+.logo {
+    height: 30px;
+    width: 35px;
+    display: flex;
+    margin: 20px;
+}
+
 a {
     text-decoration: none;
     color: black;
 }
 
 a:hover {
-    color:#C1796C;
+    color:#B48B6D;
 }
 
 /* navn i navbar */
@@ -71,43 +115,34 @@ a:hover {
 
 /* farvar på punkter i menu */
 .projekt {
-    color:#C1796C;
+    color:#B48B6D;
 }
 
 .kontakt {
-    color:#C1796C;
+    color:#B48B6D;
 }
 
 .om {
-    color:#C1796C;
+    color:#B48B6D;
 }
 /* farver på punkter i menu slut */
 
-.logo {
-    height: 30px;
-    width: 35px;
-    display: flex;
-    margin: 20px;
-}
-
 h3 {
     font-size: 16px;
-    font-family: paragraffont;
-    font-weight: bold;
+    font-family: opensans;
+    font-weight: bolder;
     margin-bottom: 10px;
 }
 
 /* forside mobil */
 /* indhold i box under navbar */
 .box {
-    height: 400px;
+    height: 405px;
     width: auto;
-    background-color:#E2DDDA;
+    background-color:#E9E7E2;
 }
 
 h1 {
-    font-size: 28px;
-    font-family: navnfont;
     font-weight: 100;
     position: relative;
     top: 45px;
@@ -123,7 +158,7 @@ h1 {
 
 .bold {
     font-weight: bolder;
-    color:#C1796C;
+    color:#B48B6D;
 }
 
 .portræt {
@@ -141,21 +176,21 @@ h1 {
     flex-direction: column;
     width: 240px;
     height: 170px;
-    border:#C1796C;
+    border:#E9E7E2;
     border-width: 3px;
     border-style: solid;
     text-align: center;
     position: relative;
     margin: auto;
     margin-top: 30px;
-    padding: 10px;
+    padding: 20px 10px 10px 10px;
     box-shadow: 5px 5px 5px #D3CECB;
 }
 
 .knap {
     width: 108px;
     height: 25px;
-    background-color:#C1796C;
+    background-color:#B48B6D;
     margin: auto;
     margin-top: 25px;
     border-radius: 70px;
@@ -164,9 +199,9 @@ h1 {
 
 .knaptekst {
     color:#F5F5F5;
-    font-family: paragraffont;
-    font-size: 12px;
+    font-family: opensans;
     padding: 10px;
+    font-size: 14px;
 }
 
 .knaptekst:hover {
@@ -177,7 +212,7 @@ h1 {
 
 /* footer */
 footer {
-    background-color:#F0EBE8;
+    background-color:#E9E7E2;
     height: 55px;
     width: 100%;
     padding: 10px;
@@ -204,27 +239,26 @@ footer {
 }
 /* footer slut */
 
-
 /* forside tablet */ 
 @media only screen and (min-width: 750px) {
 .container {
     height: 52px;
 }
+
+.navn {
+    left: 80px;
+}
     
 .logo {
-    width: 40px;
+    width: 50px;
+    height: 40px;
 }
     
-h2 {
-    font-size: 20px;
-}
-
 .box {
     height: 500px;
 }
     
 h1 {
-    font-size: 35px;
     top: 180px;
 }
     
@@ -236,12 +270,12 @@ h1 {
 .portræt {
     width: 225px;
     height: auto;
-    top: 164px;
+    top: 112px;
     margin-right: -150px;
 }
 
 .box1 {
-    width: 270px;
+    width: 280px;
     height: 200px;
     border-width: 6px;
     margin-top: 30px;
@@ -253,7 +287,7 @@ h1 {
     padding: 4px;
 }
 }
-
+/* forside tablet slut*/
 /* forside desktop */
 @media only screen and (min-width: 1024px) {
 main {
@@ -266,10 +300,6 @@ main {
     margin-right: 40px;
 }
 
-h1 {
-    font-size: 45px;
-}
-
 .forsidetekst {
     font-size: 30px;
 }
@@ -277,7 +307,7 @@ h1 {
 .portræt {
     width: 270px;
     height: auto;
-    top: 95px;
+    top: 45px;
 }
     
 .box1 {
@@ -285,6 +315,7 @@ h1 {
     border-width: 6px;
     margin-top: 70px;
     margin-bottom: 70px;
+    padding: 10px;
 }
 
 .knap {
@@ -296,18 +327,9 @@ h1 {
 .knaptekst {
     font-size: 16px;
 }
-
 }
 
 /* projekter mobil */
-h2 {
-    text-align: center;
-    font-family: paragraffont;
-    font-size: large;
-    margin-top: 50px;
-
-}
-
 .projektstreg {
     width: 300px;
 }
@@ -325,29 +347,26 @@ h2 {
     width: 300px;
     margin: auto;
     margin-top: 30px;
-    border: #C1796C;
+    border:#E9E7E2;
     border-style: solid;
+    border-width: 4px;
 }
 
 .knaptekstp {
-    color: #F5F5F5;
-    padding: 27px;
-    font-family: paragraffont;
-    font-size: 12px;
+    color: #FFFFFF;
+    padding: 25px;
+    font-family: opensans;
+    font-size: 14px;
 }
 
 .knaptekstp:hover {
     color: black;
 }
-
+/* projekter mobil */
 /* projekter tablet */
 @media only screen and (min-width: 750px) {
 .projektstreg {
     width: 500px;
-}
-
-h2 {
-    font-size: x-large;
 }
 
 .projektbillede {
@@ -363,8 +382,8 @@ h2 {
 }   
 
 .knaptekstp {
-    padding: 32px;
-    font-size: 14px;
+    padding: 30px;
+    font-size: 16px;
 }
 }
 
@@ -383,8 +402,8 @@ h2 {
 }
 
 .knaptekstp {
-    padding: 30px;
-    font-size: 16px;
+    padding: 28px;
+    font-size: 18px;
 }
 }
 /* projekter desktop slut */
@@ -409,12 +428,6 @@ h2 {
     margin-bottom: 50px;
 }
 
-h3 {
-    margin-bottom: 10px;
-    font-size: medium;
-    font-family: paragraffont;
-}
-
 .infop {
     width: 400px;
     margin-bottom: 30px;
@@ -432,10 +445,6 @@ h3 {
 
 .infooverskrift {
     font-size: 25px;
-}
-
-h3 {
-    font-size:large;
 }
 
 .info {
@@ -489,12 +498,13 @@ h3 {
     height: auto;
     padding: 15px;
     margin: auto;
+    background-color: #E9E7E2;
 }
 
 hr {
     margin: auto;
     height: 3px;
-    background-color:#C1796C;
+    background-color:#B48B6D;
     border-width: 0px;
     width: 365px;
     margin-top: 10px;
@@ -505,7 +515,43 @@ hr {
     flex-direction: column;
     margin-bottom: 70px;
     margin-top: 30px;
-    background-color:#E2DDDA;
+}
+
+.omstreg {
+    width: 100%;
+    margin-top: -20px;
+}
+
+.kompetencer {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.boxom {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 170px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    padding: 40px 10px 10px 10px;
+    box-shadow: 5px 5px 5px #D3CECB;
+    background-color: #E9E7E2;
+    margin-bottom: 30px;
+}
+
+.fa-pen-to-square {
+    font-size: xx-large;
+}
+
+.fa-users {
+    font-size: xx-large;
+}
+
+.fa-desktop {
+    font-size: xx-large;
 }
 
 /* om mig tablet */
@@ -524,6 +570,25 @@ hr {
     font-size: 16px;
     padding: 20px;
 }
+
+.boxom {
+    width: 280px;
+    height: 200px;
+    border-width: 6px;
+    margin-top: 20px;
+    padding: 50px;
+}
+.fa-pen-to-square {
+    font-size: xxx-large;
+}
+
+.fa-users {
+    font-size: xxx-large;
+}
+
+.fa-desktop {
+    font-size: xxx-large;
+}
 }
 /* om mig tablet slut */
 
@@ -537,7 +602,7 @@ hr {
 
 hr {
     margin-left: 140px;
-    margin-right: 140px;
+    width: 400px;
 }  
 
 .foto {
@@ -555,6 +620,10 @@ box-shadow: 5px 5px 5px #D3CECB;
 .flex {
 flex-direction: row;
 }
+
+.omstreg {
+    margin-left: auto;
+}
 }
 /* om mig desktop slut */
 
@@ -565,7 +634,7 @@ flex-direction: row;
     width: 365px;
     margin: auto;
     margin-top: 30px;
-    background-color: #D3CECB;
+    background-color:#E9E7E2;
     padding: 30px;
 }
 
@@ -597,8 +666,8 @@ flex-direction: row;
     display: flex;
     margin: auto;
     margin-top: 30px;
-    border-bottom:#C1796C;
-    border-right: #C1796C;
+    border-bottom:#B48B6D;
+    border-right:#B48B6D;
     border-style: solid;
     border-width: 4px;
 }
@@ -619,14 +688,19 @@ flex-direction: row;
 
 /* kontakt desktop */
 @media only screen and (min-width: 1024px) {
+.streg {
+    width: 600px;
+}
+
 .kontaktbox {
     width: 600px;
     margin: auto;
-    margin-left: 130px;
+    margin-left: 140px;
 }
     
 .foto1 {
     width: 400px;
+    height: 200px;
     border-width: 8px;
     margin-right: 130px;
     margin: auto;
@@ -635,6 +709,8 @@ flex-direction: row;
 .flexkontakt {
     display: flex;
     flex-direction: row;
+    height: 400px;
+    margin-bottom: 110px;
 }
 }  
 /* kontakt desktop slut */ 
